@@ -1,8 +1,9 @@
 # Pointer networks experiments
 
-Code for genereting data, training and testing. There are two tasks: ordering single numbers, or sums or numbers (the `_sums` suffix).
+Basic experiments with pointer networks for Travelling salesman problem 
 
-The training scripts save model weights each epoch. When started, they attempt to load appropriate weights - corresponding to the hidden size and the chosen number of steps in a sequence.
+TSP_rawcord.py - TSP with raw coordinates 
+TSP_graph.py  - TSP with distance graph as input 
 
 This software builts upon [https://github.com/keon/pointer-networks](https://github.com/keon/pointer-networks).
 
