@@ -77,9 +77,9 @@ while True:
 
 	p = model.predict( x_test )
 
-	for y_, p_ in zip( y_test, p )[:5]:
-		print "y_test:", y_
-		print "p:     ", p_.argmax( axis = 1 )
+	for y_, p_ in list(zip( y_test, p))[:5]:
+		print("y_test:", y_)
+		print("p:     ", p_.argmax( axis = 1 ))
 		print
 
 	model.save_weights( weights_file )
